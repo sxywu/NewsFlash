@@ -26,6 +26,10 @@
 		E431D7ED154676680085DB2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E431D7C0154676680085DB2E /* Foundation.framework */; };
 		E431D7F5154676680085DB2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E431D7F3154676680085DB2E /* InfoPlist.strings */; };
 		E431D7F8154676680085DB2E /* NewsFlashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E431D7F7154676680085DB2E /* NewsFlashTests.m */; };
+		E431D807154686C70085DB2E /* DetailedNewsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E431D806154686C70085DB2E /* DetailedNewsScreen.m */; };
+		E431D80A154687F30085DB2E /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E431D808154687F30085DB2E /* CoreData.xcdatamodeld */; };
+		E43302C615469E32002F8911 /* DetailedNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E43302C515469E32002F8911 /* DetailedNewsCell.m */; };
+		E4C40954154692BC00C3A4BE /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C40953154692BC00C3A4BE /* Article.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,13 @@
 		E431D7F4154676680085DB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E431D7F6154676680085DB2E /* NewsFlashTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFlashTests.h; sourceTree = "<group>"; };
 		E431D7F7154676680085DB2E /* NewsFlashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFlashTests.m; sourceTree = "<group>"; };
+		E431D805154686C70085DB2E /* DetailedNewsScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedNewsScreen.h; sourceTree = "<group>"; };
+		E431D806154686C70085DB2E /* DetailedNewsScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedNewsScreen.m; sourceTree = "<group>"; };
+		E431D809154687F30085DB2E /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		E43302C415469E32002F8911 /* DetailedNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedNewsCell.h; sourceTree = "<group>"; };
+		E43302C515469E32002F8911 /* DetailedNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedNewsCell.m; sourceTree = "<group>"; };
+		E4C40952154692BC00C3A4BE /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		E4C40953154692BC00C3A4BE /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +138,13 @@
 				E431D7CD154676680085DB2E /* AppDelegate.h */,
 				E431D7CE154676680085DB2E /* AppDelegate.m */,
 				E431D7D0154676680085DB2E /* MainStoryboard_iPhone.storyboard */,
+				E431D808154687F30085DB2E /* CoreData.xcdatamodeld */,
+				E431D805154686C70085DB2E /* DetailedNewsScreen.h */,
+				E431D806154686C70085DB2E /* DetailedNewsScreen.m */,
+				E43302C415469E32002F8911 /* DetailedNewsCell.h */,
+				E43302C515469E32002F8911 /* DetailedNewsCell.m */,
+				E4C40952154692BC00C3A4BE /* Article.h */,
+				E4C40953154692BC00C3A4BE /* Article.m */,
 				E431D7C5154676680085DB2E /* Supporting Files */,
 			);
 			path = NewsFlash;
@@ -286,6 +304,10 @@
 				E431D7CF154676680085DB2E /* AppDelegate.m in Sources */,
 				E431D7D8154676680085DB2E /* FirstViewController.m in Sources */,
 				E431D7DF154676680085DB2E /* SecondViewController.m in Sources */,
+				E431D807154686C70085DB2E /* DetailedNewsScreen.m in Sources */,
+				E431D80A154687F30085DB2E /* CoreData.xcdatamodeld in Sources */,
+				E4C40954154692BC00C3A4BE /* Article.m in Sources */,
+				E43302C615469E32002F8911 /* DetailedNewsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +487,7 @@
 				E431D7FD154676680085DB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E431D7FE154676680085DB2E /* Build configuration list for PBXNativeTarget "NewsFlashTests" */ = {
 			isa = XCConfigurationList;
@@ -473,8 +496,22 @@
 				E431D800154676680085DB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E431D808154687F30085DB2E /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E431D809154687F30085DB2E /* CoreData.xcdatamodel */,
+			);
+			currentVersion = E431D809154687F30085DB2E /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E431D7B1154676670085DB2E /* Project object */;
 }
