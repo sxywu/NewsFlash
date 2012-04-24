@@ -43,27 +43,27 @@
 		E431D7BE154676680085DB2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E431D7C0154676680085DB2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E431D7C2154676680085DB2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E431D7C6154676680085DB2E /* NewsFlash-Info.plist */ = {isa = PBXFileReference; path = "NewsFlash-Info.plist"; sourceTree = "<group>"; };
+		E431D7C6154676680085DB2E /* NewsFlash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsFlash-Info.plist"; sourceTree = "<group>"; };
 		E431D7C8154676680085DB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E431D7CA154676680085DB2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E431D7CC154676680085DB2E /* NewsFlash-Prefix.pch */ = {isa = PBXFileReference; path = "NewsFlash-Prefix.pch"; sourceTree = "<group>"; };
-		E431D7CD154676680085DB2E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E431D7CC154676680085DB2E /* NewsFlash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsFlash-Prefix.pch"; sourceTree = "<group>"; };
+		E431D7CD154676680085DB2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E431D7CE154676680085DB2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E431D7D1154676680085DB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		E431D7D4154676680085DB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		E431D7D6154676680085DB2E /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		E431D7D6154676680085DB2E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		E431D7D7154676680085DB2E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		E431D7D9154676680085DB2E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		E431D7DB154676680085DB2E /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		E431D7DD154676680085DB2E /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		E431D7DD154676680085DB2E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		E431D7DE154676680085DB2E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E431D7E0154676680085DB2E /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		E431D7E2154676680085DB2E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		E431D7E9154676680085DB2E /* NewsFlashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsFlashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E431D7EA154676680085DB2E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E431D7F2154676680085DB2E /* NewsFlashTests-Info.plist */ = {isa = PBXFileReference; path = "NewsFlashTests-Info.plist"; sourceTree = "<group>"; };
+		E431D7F2154676680085DB2E /* NewsFlashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsFlashTests-Info.plist"; sourceTree = "<group>"; };
 		E431D7F4154676680085DB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E431D7F6154676680085DB2E /* NewsFlashTests.h */ = {isa = PBXFileReference; path = NewsFlashTests.h; sourceTree = "<group>"; };
+		E431D7F6154676680085DB2E /* NewsFlashTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFlashTests.h; sourceTree = "<group>"; };
 		E431D7F7154676680085DB2E /* NewsFlashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFlashTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +127,14 @@
 				E431D7CD154676680085DB2E /* AppDelegate.h */,
 				E431D7CE154676680085DB2E /* AppDelegate.m */,
 				E431D7D0154676680085DB2E /* MainStoryboard_iPhone.storyboard */,
+				E431D7C5154676680085DB2E /* Supporting Files */,
+			);
+			path = NewsFlash;
+			sourceTree = "<group>";
+		};
+		E431D7C5154676680085DB2E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				E431D7D3154676680085DB2E /* MainStoryboard_iPad.storyboard */,
 				E431D7D6154676680085DB2E /* FirstViewController.h */,
 				E431D7D7154676680085DB2E /* FirstViewController.m */,
@@ -136,14 +144,6 @@
 				E431D7DE154676680085DB2E /* SecondViewController.m */,
 				E431D7E0154676680085DB2E /* second.png */,
 				E431D7E2154676680085DB2E /* second@2x.png */,
-				E431D7C5154676680085DB2E /* Supporting Files */,
-			);
-			path = NewsFlash;
-			sourceTree = "<group>";
-		};
-		E431D7C5154676680085DB2E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				E431D7C6154676680085DB2E /* NewsFlash-Info.plist */,
 				E431D7C7154676680085DB2E /* InfoPlist.strings */,
 				E431D7CA154676680085DB2E /* main.m */,
