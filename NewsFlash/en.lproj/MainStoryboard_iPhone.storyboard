@@ -20,10 +20,44 @@
                     </tabBar>
                     <connections>
                         <segue destination="dsb-fD-WnF" kind="relationship" relationship="viewControllers" id="yKr-Nk-Ngm"/>
+                        <segue destination="Rdi-3N-KYy" kind="relationship" relationship="viewControllers" id="djk-OI-Znt"/>
                     </connections>
                 </tabBarController>
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+        <!--Table View Controller - Item-->
+        <scene sceneID="Vyl-6S-xcj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyQ-rl-Jy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Rdi-3N-KYy" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LiM-eM-KxN">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="qg9-M0-jk5">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="dsb-fD-WnF" kind="push" id="xV6-Ni-Rm5"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Rdi-3N-KYy" id="Lsb-2q-KL3"/>
+                            <outlet property="delegate" destination="Rdi-3N-KYy" id="DTu-UD-fkG"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="J4T-XQ-2Eu"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="728" y="590"/>
         </scene>
         <!--Detailed News Screen - Item-->
         <scene sceneID="2V7-8b-5uz">
@@ -50,7 +84,7 @@
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" text="blah" id="FQg-1n-hEh">
-                                            <rect key="frame" x="0.0" y="35" width="273" height="65"/>
+                                            <rect key="frame" x="0.0" y="21" width="273" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -74,7 +108,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="733" y="180"/>
+            <point key="canvasLocation" x="1293" y="180"/>
         </scene>
     </scenes>
     <resources>
@@ -97,4 +131,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="xV6-Ni-Rm5"/>
+    </inferredMetricsTieBreakers>
 </document>

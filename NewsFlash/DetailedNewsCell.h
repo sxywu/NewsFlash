@@ -6,8 +6,11 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
 @interface DetailedNewsCell : UITableViewCell
+
+//todo(Shirley): change it to article later
+- (void)populateArticle:(NSDictionary *)article;
 
 @end
