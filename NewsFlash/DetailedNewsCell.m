@@ -25,11 +25,15 @@
 
 - (void)populateArticle:(NSDictionary *)article {
     title.text = [article objectForKey:@"title"];
-    body.text = [article objectForKey:@"body"];
+    title.lineBreakMode = UILineBreakModeWordWrap;
+    title.numberOfLines = 0;
     
+    body.text = [article objectForKey:@"body"];
     CGRect frame = body.frame;
     frame.size.height = body.contentSize.height;
     body.frame = frame;
+    
 }
+
 
 @end

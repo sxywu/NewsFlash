@@ -64,27 +64,27 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRy-eS-tSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="dsb-fD-WnF" customClass="DetailedNewsScreen" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="109" sectionHeaderHeight="10" sectionFooterHeight="10" id="F5f-l0-zPN">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="59" sectionHeaderHeight="10" sectionFooterHeight="10" id="F5f-l0-zPN">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.61868036514862967" green="0.81534848290314632" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailedNewsCell" rowHeight="109" id="uQe-pK-WRE" customClass="DetailedNewsCell">
-                                <rect key="frame" x="0.0" y="46" width="320" height="111"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailedNewsCell" rowHeight="59" id="uQe-pK-WRE" customClass="DetailedNewsCell">
+                                <rect key="frame" x="0.0" y="46" width="320" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="280" height="108"/>
+                                    <rect key="frame" x="10" y="1" width="280" height="58"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="wRj-YA-LXz">
-                                            <rect key="frame" x="10" y="6" width="280" height="21"/>
+                                            <rect key="frame" x="7" y="6" width="280" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" text="blah" id="FQg-1n-hEh">
-                                            <rect key="frame" x="0.0" y="21" width="273" height="65"/>
+                                            <rect key="frame" x="0.0" y="20" width="273" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -114,18 +114,6 @@
     <resources>
         <image name="first.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="DetailedNewsCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailedNewsCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="body" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DetailedNewsScreen" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailedNewsScreen.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

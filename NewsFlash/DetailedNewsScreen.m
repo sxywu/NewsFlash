@@ -76,10 +76,10 @@
     return nil;
 }
 
-/* todo(Shirley): errors out for now.
+/*
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    return cell.bounds.size.height;
+    NSString *cellText = [[articles objectAtIndex:indexPath.section] objectForKey:@"body"];
+    UIFont *cellFont = [UIFont fontWithName:@"System" size:14.0];
 }
 */
 

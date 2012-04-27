@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TumblrReader.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    TumblrReader* reader = [[TumblrReader alloc] init];
+    [reader updateLinks];
+    [reader release];
     return YES;
 }
 							
