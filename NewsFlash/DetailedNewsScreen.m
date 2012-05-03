@@ -6,34 +6,44 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import "Article.h"
+#import "AppDelegate.h"
 #import "DetailedNewsScreen.h"
 #import "DetailedNewsCell.h"
 
 
 @interface DetailedNewsScreen ()
 
-@property (retain, nonatomic) NSArray *articles;
+@property (nonatomic, retain) NSFetchedResultsController *fetchResultsController;
+@property (nonatomic,readonly) NSManagedObjectContext* managedObjectContext;
+//@property (retain, nonatomic) NSArray *articles;
 
 @end
 
 
 @implementation DetailedNewsScreen
 
-@synthesize articles;
+//@synthesize articles;
+@synthesize managedObjectContext;
+@synthesize fetchResultsController;
 
+- (void)dealloc {
+    fetchResultsController.delegate = nil;
+//    [articles release];
+    [managedObjectContext release];
+    [fetchResultsController release];
+    [super dealloc];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    articles = [NSArray arrayWithObjects: 
-                [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"U.S., EU impose new sanctions on Syria blah", @"blahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahtotheblahblahblahtotheblahblahblahtotheblah", nil]
-                                             forKeys:[NSArray arrayWithObjects:@"title", @"body", nil]], 
-                [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"blah2", @"blahtotheblah2", nil]
-                                            forKeys:[NSArray arrayWithObjects:@"title", @"body", nil]],
-                [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"blah3", @"blahtotheblah3", nil]
-                                            forKeys:[NSArray arrayWithObjects:@"title", @"body", nil]],
-                nil];
+    fetchResultsController = [self newFetchResultsController];
+    NSError *error = nil;
+    if (![fetchResultsController performFetch:&error]) {
+        NSLog(@"Error fetching core data");
+    }
 }
 
 - (void)viewDidUnload
@@ -41,9 +51,33 @@
     [super viewDidUnload];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+
+#pragma mark - accessors
+
+- (NSManagedObjectContext *)managedObjectContext {
+    if (managedObjectContext == nil) {
+        AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+        managedObjectContext = [appDelegate.managedObjectContext retain];
+    }
+    return managedObjectContext;
+}
+
+- (NSFetchedResultsController *)newFetchResultsController {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Article"
+                                              inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    [sortDescriptor release];
+    [sortDescriptors release];
+    
+    NSFetchedResultsController *controller = [[NSFetchedResultsController alloc]
+                                              initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    [fetchRequest release];
+    
+    return controller;
 }
 
 
@@ -51,7 +85,8 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [articles count];
+    NSUInteger sections = [[[fetchResultsController sections] objectAtIndex:0] numberOfObjects];
+    return sections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -62,7 +97,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailedNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DetailedNewsCell"];
-    [cell populateArticle:[articles objectAtIndex:[indexPath section]]];
+    NSUInteger indexes[] = {0, indexPath.section};
+    NSIndexPath *path = [NSIndexPath indexPathWithIndexes:indexes length:2];
+    Article *article = (Article *)[fetchResultsController objectAtIndexPath:path];
+    [cell populateArticle:article];
     return cell;
 }
 

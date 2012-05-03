@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import "Article.h"
 #import "DetailedNewsCell.h"
 
 
@@ -23,12 +24,18 @@
 @synthesize title;
 @synthesize body;
 
-- (void)populateArticle:(NSDictionary *)article {
-    title.text = [article objectForKey:@"title"];
+- (void)dealloc {
+    [title release];
+    [body release];
+    [super dealloc];
+}
+
+- (void)populateArticle:(Article *)article {
+    title.text = article.title;
     title.lineBreakMode = UILineBreakModeWordWrap;
     title.numberOfLines = 0;
     
-    body.text = [article objectForKey:@"body"];
+    body.text = article.body;
     CGRect frame = body.frame;
     frame.size.height = body.contentSize.height;
     body.frame = frame;

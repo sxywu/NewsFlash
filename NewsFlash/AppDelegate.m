@@ -13,10 +13,15 @@
 
 @synthesize window = _window;
 
+@synthesize managedObjectContext;
+@synthesize managedObjectModel;
+@synthesize persistentStoreCoordinator;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    TumblrReader* reader = [[TumblrReader alloc] init];
+    NSLog(@"App did finish launching");
+    TumblrReader* reader = [[TumblrReader alloc] initContext:self.managedObjectContext];
     [reader updateLinks];
     [reader release];
     return YES;
@@ -47,6 +52,57 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (NSManagedObjectContext *)managedObjectContext
+{
+    
+    if (managedObjectContext != nil)
+    {
+        return managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = self.persistentStoreCoordinator;
+    if (coordinator != nil)
+    {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext setPersistentStoreCoordinator:coordinator];
+    }
+    return managedObjectContext;
+}
+
+- (NSManagedObjectModel *)managedObjectModel {
+    
+    if (managedObjectModel != nil) {
+        return managedObjectModel;
+    }
+    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
+    return managedObjectModel;
+}
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+    
+    NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"Tumblr.sqlite"]];
+    
+    NSError *error;
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+        // Handle the error somehow
+    }    
+    
+    return persistentStoreCoordinator;
+}
+
+- (NSString *)applicationDocumentsDirectory {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    NSLog(@"Using %@ as the path", basePath);
+    return basePath;
 }
 
 @end

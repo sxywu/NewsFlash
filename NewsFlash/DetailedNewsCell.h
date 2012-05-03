@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Article;
 
 @interface DetailedNewsCell : UITableViewCell
 
 //todo(Shirley): change it to article later
-- (void)populateArticle:(NSDictionary *)article;
+- (void)populateArticle:(Article *)article;
 
 @end

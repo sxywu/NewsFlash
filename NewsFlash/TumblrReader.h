@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "SBJson.h"
+#import "Article.h"
 
 @interface TumblrReader : NSObject
 
--(id)init;
+@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
+
+- (id)init;
+- (id)initContext:(NSManagedObjectContext*) context;
 -(void) updateLinks;
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response;
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;

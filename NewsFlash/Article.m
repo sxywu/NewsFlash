@@ -10,4 +10,10 @@
 
 @implementation Article
 
+@dynamic body;
+@dynamic image;
+@dynamic title;
+@dynamic url;
+@dynamic date;
+
 @end
