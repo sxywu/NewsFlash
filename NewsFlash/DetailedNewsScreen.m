@@ -70,6 +70,17 @@
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
     NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
     [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    NSDate* today = [NSDate date];
+    
+    // Offset of one day in seconds
+    NSDate *yesterday = [today dateByAddingTimeInterval: -86400.0];
+    
+    // Get all articles within the span of one day
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(date >= %@)", yesterday];
+    [fetchRequest setPredicate:predicate];
+
+    
     [sortDescriptor release];
     [sortDescriptors release];
     
@@ -101,6 +112,7 @@
     NSIndexPath *path = [NSIndexPath indexPathWithIndexes:indexes length:2];
     Article *article = (Article *)[fetchResultsController objectAtIndexPath:path];
     [cell populateArticle:article];
+    NSLog(@"Cell populated");
     return cell;
 }
 
