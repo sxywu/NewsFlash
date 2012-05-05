@@ -29,8 +29,29 @@
 		E431D807154686C70085DB2E /* DetailedNewsScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E431D806154686C70085DB2E /* DetailedNewsScreen.m */; };
 		E431D80A154687F30085DB2E /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E431D808154687F30085DB2E /* CoreData.xcdatamodeld */; };
 		E43302C615469E32002F8911 /* DetailedNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E43302C515469E32002F8911 /* DetailedNewsCell.m */; };
+		E459E8A615532D88006C0148 /* CellGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = E459E8A515532D88006C0148 /* CellGradient.m */; };
+		E459E8AB15532F9B006C0148 /* GradientCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = E459E8AA15532F9B006C0148 /* GradientCellBackground.m */; };
+		E459E8AE15533704006C0148 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = E459E8AD15533704006C0148 /* WebController.m */; };
 		E45DD690154FDECA0016D2DD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45DD68F154FDECA0016D2DD /* CoreData.framework */; };
-		E47D96721547B3F7005A73EA /* TumblrReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E47D96711547B3F7005A73EA /* TumblrReader.m */; };
+		E4773AEC15526D1900A80A6D /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AEB15526D1900A80A6D /* GTMHTTPFetcher.m */; };
+		E4773AED15526D1900A80A6D /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AEB15526D1900A80A6D /* GTMHTTPFetcher.m */; };
+		E4773AF215526D4B00A80A6D /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AEF15526D4B00A80A6D /* GTMOAuthAuthentication.m */; };
+		E4773AF315526D4B00A80A6D /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AEF15526D4B00A80A6D /* GTMOAuthAuthentication.m */; };
+		E4773AF815526E3300A80A6D /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AF715526E3300A80A6D /* GTMOAuthSignIn.m */; };
+		E4773AF915526E3300A80A6D /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AF715526E3300A80A6D /* GTMOAuthSignIn.m */; };
+		E4773AFB15526EC200A80A6D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4773AFA15526EC200A80A6D /* SystemConfiguration.framework */; };
+		E4773AFF15526EE700A80A6D /* GTMOAuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4773AFC15526EE700A80A6D /* GTMOAuthWindow.xib */; };
+		E4773B0015526EE700A80A6D /* GTMOAuthWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4773AFC15526EE700A80A6D /* GTMOAuthWindow.xib */; };
+		E4773B0115526EE700A80A6D /* GTMOAuthWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AFE15526EE700A80A6D /* GTMOAuthWindowController.m */; };
+		E4773B0215526EE700A80A6D /* GTMOAuthWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4773AFE15526EE700A80A6D /* GTMOAuthWindowController.m */; };
+		E477ABD115527DD30004717C /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = E477ABCF15527DD30004717C /* GTMOAuthViewControllerTouch.m */; };
+		E477ABD215527DD30004717C /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = E477ABCF15527DD30004717C /* GTMOAuthViewControllerTouch.m */; };
+		E477ABD315527DD30004717C /* GTMOAuthViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = E477ABD015527DD30004717C /* GTMOAuthViewTouch.xib */; };
+		E477ABD415527DD30004717C /* GTMOAuthViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = E477ABD015527DD30004717C /* GTMOAuthViewTouch.xib */; };
+		E477ABD615527EAF0004717C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E477ABD515527EAF0004717C /* Security.framework */; };
+		E477ABD9155281AB0004717C /* StartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E477ABD8155281AB0004717C /* StartScreen.m */; };
+		E477ABDA155281AB0004717C /* StartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E477ABD8155281AB0004717C /* StartScreen.m */; };
+		E47D96721547B3F7005A73EA /* TumblrUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = E47D96711547B3F7005A73EA /* TumblrUtility.m */; };
 		E47D968D1547E2B2005A73EA /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E47D96751547E2B2005A73EA /* NSObject+SBJson.m */; };
 		E47D968E1547E2B2005A73EA /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = E47D96751547E2B2005A73EA /* NSObject+SBJson.m */; };
 		E47D968F1547E2B2005A73EA /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E47D96781547E2B2005A73EA /* SBJsonParser.m */; };
@@ -100,9 +121,31 @@
 		E431D809154687F30085DB2E /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		E43302C415469E32002F8911 /* DetailedNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedNewsCell.h; sourceTree = "<group>"; };
 		E43302C515469E32002F8911 /* DetailedNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedNewsCell.m; sourceTree = "<group>"; };
+		E459E8A415532D88006C0148 /* CellGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGradient.h; sourceTree = "<group>"; };
+		E459E8A515532D88006C0148 /* CellGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellGradient.m; sourceTree = "<group>"; };
+		E459E8A915532F9B006C0148 /* GradientCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientCellBackground.h; sourceTree = "<group>"; };
+		E459E8AA15532F9B006C0148 /* GradientCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientCellBackground.m; sourceTree = "<group>"; };
+		E459E8AC15533704006C0148 /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
+		E459E8AD15533704006C0148 /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
 		E45DD68F154FDECA0016D2DD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E47D96701547B3F7005A73EA /* TumblrReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrReader.h; sourceTree = "<group>"; };
-		E47D96711547B3F7005A73EA /* TumblrReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrReader.m; sourceTree = "<group>"; };
+		E4773AEA15526D1900A80A6D /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		E4773AEB15526D1900A80A6D /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		E4773AEE15526D4B00A80A6D /* GTMOAuthAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuthAuthentication.h; sourceTree = "<group>"; };
+		E4773AEF15526D4B00A80A6D /* GTMOAuthAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuthAuthentication.m; sourceTree = "<group>"; };
+		E4773AF615526E3300A80A6D /* GTMOAuthSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuthSignIn.h; sourceTree = "<group>"; };
+		E4773AF715526E3300A80A6D /* GTMOAuthSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuthSignIn.m; sourceTree = "<group>"; };
+		E4773AFA15526EC200A80A6D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E4773AFC15526EE700A80A6D /* GTMOAuthWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuthWindow.xib; sourceTree = "<group>"; };
+		E4773AFD15526EE700A80A6D /* GTMOAuthWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuthWindowController.h; sourceTree = "<group>"; };
+		E4773AFE15526EE700A80A6D /* GTMOAuthWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuthWindowController.m; sourceTree = "<group>"; };
+		E477ABCE15527DD30004717C /* GTMOAuthViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuthViewControllerTouch.h; sourceTree = "<group>"; };
+		E477ABCF15527DD30004717C /* GTMOAuthViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuthViewControllerTouch.m; sourceTree = "<group>"; };
+		E477ABD015527DD30004717C /* GTMOAuthViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuthViewTouch.xib; sourceTree = "<group>"; };
+		E477ABD515527EAF0004717C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E477ABD7155281AB0004717C /* StartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScreen.h; sourceTree = "<group>"; };
+		E477ABD8155281AB0004717C /* StartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScreen.m; sourceTree = "<group>"; };
+		E47D96701547B3F7005A73EA /* TumblrUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrUtility.h; sourceTree = "<group>"; };
+		E47D96711547B3F7005A73EA /* TumblrUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrUtility.m; sourceTree = "<group>"; };
 		E47D96741547E2B2005A73EA /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		E47D96751547E2B2005A73EA /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		E47D96761547E2B2005A73EA /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -137,6 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E477ABD615527EAF0004717C /* Security.framework in Frameworks */,
+				E4773AFB15526EC200A80A6D /* SystemConfiguration.framework in Frameworks */,
 				E45DD690154FDECA0016D2DD /* CoreData.framework in Frameworks */,
 				E431D7BF154676680085DB2E /* UIKit.framework in Frameworks */,
 				E431D7C1154676680085DB2E /* Foundation.framework in Frameworks */,
@@ -160,6 +205,8 @@
 		E431D7AF154676670085DB2E = {
 			isa = PBXGroup;
 			children = (
+				E477ABD515527EAF0004717C /* Security.framework */,
+				E4773AFA15526EC200A80A6D /* SystemConfiguration.framework */,
 				E45DD68F154FDECA0016D2DD /* CoreData.framework */,
 				E431D7C4154676680085DB2E /* NewsFlash */,
 				E431D7F0154676680085DB2E /* NewsFlashTests */,
@@ -195,12 +242,17 @@
 				E431D7CE154676680085DB2E /* AppDelegate.m */,
 				E431D7D0154676680085DB2E /* MainStoryboard_iPhone.storyboard */,
 				E431D808154687F30085DB2E /* CoreData.xcdatamodeld */,
+				E459E8A815532E8A006C0148 /* Gradient */,
 				E431D805154686C70085DB2E /* DetailedNewsScreen.h */,
 				E431D806154686C70085DB2E /* DetailedNewsScreen.m */,
-				E47D96701547B3F7005A73EA /* TumblrReader.h */,
-				E47D96711547B3F7005A73EA /* TumblrReader.m */,
+				E47D96701547B3F7005A73EA /* TumblrUtility.h */,
+				E47D96711547B3F7005A73EA /* TumblrUtility.m */,
 				E43302C415469E32002F8911 /* DetailedNewsCell.h */,
 				E43302C515469E32002F8911 /* DetailedNewsCell.m */,
+				E459E8AC15533704006C0148 /* WebController.h */,
+				E459E8AD15533704006C0148 /* WebController.m */,
+				E477ABD7155281AB0004717C /* StartScreen.h */,
+				E477ABD8155281AB0004717C /* StartScreen.m */,
 				E4C40952154692BC00C3A4BE /* Article.h */,
 				E4C40953154692BC00C3A4BE /* Article.m */,
 				E431D7C5154676680085DB2E /* Supporting Files */,
@@ -211,11 +263,23 @@
 		E431D7C5154676680085DB2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E477ABCE15527DD30004717C /* GTMOAuthViewControllerTouch.h */,
+				E477ABCF15527DD30004717C /* GTMOAuthViewControllerTouch.m */,
+				E477ABD015527DD30004717C /* GTMOAuthViewTouch.xib */,
+				E4773AFC15526EE700A80A6D /* GTMOAuthWindow.xib */,
+				E4773AFD15526EE700A80A6D /* GTMOAuthWindowController.h */,
+				E4773AFE15526EE700A80A6D /* GTMOAuthWindowController.m */,
+				E4773AF615526E3300A80A6D /* GTMOAuthSignIn.h */,
+				E4773AF715526E3300A80A6D /* GTMOAuthSignIn.m */,
 				E47D96741547E2B2005A73EA /* NSObject+SBJson.h */,
 				E47D96751547E2B2005A73EA /* NSObject+SBJson.m */,
 				E47D96761547E2B2005A73EA /* SBJson.h */,
+				E4773AEE15526D4B00A80A6D /* GTMOAuthAuthentication.h */,
+				E4773AEF15526D4B00A80A6D /* GTMOAuthAuthentication.m */,
 				E47D96771547E2B2005A73EA /* SBJsonParser.h */,
 				E47D96781547E2B2005A73EA /* SBJsonParser.m */,
+				E4773AEA15526D1900A80A6D /* GTMHTTPFetcher.h */,
+				E4773AEB15526D1900A80A6D /* GTMHTTPFetcher.m */,
 				E47D96791547E2B2005A73EA /* SBJsonStreamParser.h */,
 				E47D967A1547E2B2005A73EA /* SBJsonStreamParser.m */,
 				E47D967B1547E2B2005A73EA /* SBJsonStreamParserAccumulator.h */,
@@ -270,6 +334,17 @@
 				E431D7F3154676680085DB2E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E459E8A815532E8A006C0148 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				E459E8A415532D88006C0148 /* CellGradient.h */,
+				E459E8A515532D88006C0148 /* CellGradient.m */,
+				E459E8A915532F9B006C0148 /* GradientCellBackground.h */,
+				E459E8AA15532F9B006C0148 /* GradientCellBackground.m */,
+			);
+			name = Gradient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +424,8 @@
 				E431D7DC154676680085DB2E /* first@2x.png in Resources */,
 				E431D7E1154676680085DB2E /* second.png in Resources */,
 				E431D7E3154676680085DB2E /* second@2x.png in Resources */,
+				E4773AFF15526EE700A80A6D /* GTMOAuthWindow.xib in Resources */,
+				E477ABD315527DD30004717C /* GTMOAuthViewTouch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +434,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E431D7F5154676680085DB2E /* InfoPlist.strings in Resources */,
+				E4773B0015526EE700A80A6D /* GTMOAuthWindow.xib in Resources */,
+				E477ABD415527DD30004717C /* GTMOAuthViewTouch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +470,7 @@
 				E431D80A154687F30085DB2E /* CoreData.xcdatamodeld in Sources */,
 				E4C40954154692BC00C3A4BE /* Article.m in Sources */,
 				E43302C615469E32002F8911 /* DetailedNewsCell.m in Sources */,
-				E47D96721547B3F7005A73EA /* TumblrReader.m in Sources */,
+				E47D96721547B3F7005A73EA /* TumblrUtility.m in Sources */,
 				E47D968D1547E2B2005A73EA /* NSObject+SBJson.m in Sources */,
 				E47D968F1547E2B2005A73EA /* SBJsonParser.m in Sources */,
 				E47D96911547E2B2005A73EA /* SBJsonStreamParser.m in Sources */,
@@ -404,6 +483,15 @@
 				E47D969F1547E2B2005A73EA /* SBJsonTokeniser.m in Sources */,
 				E47D96A11547E2B2005A73EA /* SBJsonUTF8Stream.m in Sources */,
 				E47D96A31547E2B2005A73EA /* SBJsonWriter.m in Sources */,
+				E4773AEC15526D1900A80A6D /* GTMHTTPFetcher.m in Sources */,
+				E4773AF215526D4B00A80A6D /* GTMOAuthAuthentication.m in Sources */,
+				E4773AF815526E3300A80A6D /* GTMOAuthSignIn.m in Sources */,
+				E4773B0115526EE700A80A6D /* GTMOAuthWindowController.m in Sources */,
+				E477ABD115527DD30004717C /* GTMOAuthViewControllerTouch.m in Sources */,
+				E477ABD9155281AB0004717C /* StartScreen.m in Sources */,
+				E459E8A615532D88006C0148 /* CellGradient.m in Sources */,
+				E459E8AB15532F9B006C0148 /* GradientCellBackground.m in Sources */,
+				E459E8AE15533704006C0148 /* WebController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +512,12 @@
 				E47D96A01547E2B2005A73EA /* SBJsonTokeniser.m in Sources */,
 				E47D96A21547E2B2005A73EA /* SBJsonUTF8Stream.m in Sources */,
 				E47D96A41547E2B2005A73EA /* SBJsonWriter.m in Sources */,
+				E4773AED15526D1900A80A6D /* GTMHTTPFetcher.m in Sources */,
+				E4773AF315526D4B00A80A6D /* GTMOAuthAuthentication.m in Sources */,
+				E4773AF915526E3300A80A6D /* GTMOAuthSignIn.m in Sources */,
+				E4773B0215526EE700A80A6D /* GTMOAuthWindowController.m in Sources */,
+				E477ABD215527DD30004717C /* GTMOAuthViewControllerTouch.m in Sources */,
+				E477ABDA155281AB0004717C /* StartScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +620,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsFlash/NewsFlash-Prefix.pch";
 				INFOPLIST_FILE = "NewsFlash/NewsFlash-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -537,6 +632,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NewsFlash/NewsFlash-Prefix.pch";
 				INFOPLIST_FILE = "NewsFlash/NewsFlash-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

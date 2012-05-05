@@ -15,5 +15,7 @@
 @dynamic title;
 @dynamic url;
 @dynamic date;
+@dynamic post_id;
+@dynamic reblogkey;
 
 @end

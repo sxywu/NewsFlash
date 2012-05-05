@@ -8,6 +8,7 @@
 
 #import "Article.h"
 #import "DetailedNewsCell.h"
+#import "GradientCellBackground.h"
 
 
 @interface DetailedNewsCell()
@@ -32,13 +33,14 @@
 
 - (void)populateArticle:(Article *)article {
     title.text = article.title;
-    title.lineBreakMode = UILineBreakModeWordWrap;
-    title.numberOfLines = 0;
     
     body.text = article.body;
     CGRect frame = body.frame;
     frame.size.height = body.contentSize.height;
     body.frame = frame;
+    
+    self.backgroundView = [[[GradientCellBackground alloc] init] autorelease];
+    
     
 }
 

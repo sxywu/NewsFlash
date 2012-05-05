@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "DetailedNewsScreen.h"
 #import "DetailedNewsCell.h"
+#import "WebController.h"
 
 
 @interface DetailedNewsScreen ()
@@ -26,6 +27,7 @@
 //@synthesize articles;
 @synthesize managedObjectContext;
 @synthesize fetchResultsController;
+
 
 - (void)dealloc {
     fetchResultsController.delegate = nil;
@@ -44,6 +46,11 @@
     if (![fetchResultsController performFetch:&error]) {
         NSLog(@"Error fetching core data");
     }
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *format = [[NSDateFormatter alloc] init];
+    [format setDateFormat:@"MMMM d, YYYY"];
+    self.title = [format stringFromDate:date];
 }
 
 - (void)viewDidUnload
@@ -116,15 +123,15 @@
     return cell;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == 0) {
-        NSDate *date = [NSDate date];
-        NSDateFormatter *format = [[NSDateFormatter alloc] init];
-        [format setDateFormat:@"MMMM d, YYYY"];
-        return [format stringFromDate:date];
-    }
-    return nil;
-}
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//    if (section == 0) {
+//        NSDate *date = [NSDate date];
+//        NSDateFormatter *format = [[NSDateFormatter alloc] init];
+//        [format setDateFormat:@"MMMM d, YYYY"];
+//        return [format stringFromDate:date];
+//    }
+//    return nil;
+//}
 
 /*
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -137,13 +144,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+
+    WebController *webController = [[WebController alloc] init];
+    NSUInteger indexes[] = {0, indexPath.section};
+    NSIndexPath *path = [NSIndexPath indexPathWithIndexes:indexes length:2];
+    Article *article = (Article *)[fetchResultsController objectAtIndexPath:path];
+    NSURL *url = [NSURL URLWithString:article.url];
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    [webController setURLRequest:urlRequest];
+    [self.navigationController pushViewController:webController animated:YES];
+    
 }
 
 @end

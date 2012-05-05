@@ -16,5 +16,7 @@
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * url;
 @property (nonatomic, retain) NSDate * date;
+@property (nonatomic, retain) NSString * post_id;
+@property (nonatomic, retain) NSString * reblogkey;
 
 @end
